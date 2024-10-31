@@ -5,7 +5,7 @@ import PrimaryButton from '../components/PrimaryButton';
 function StartGameScreen() {
     return (
         <View style={styles.inputContainer}>
-            <TextInput style={styles.numberInput} />
+            <TextInput style={styles.numberInput} maxLength={2} />
             <PrimaryButton>React</PrimaryButton>
             <PrimaryButton>Confirm</PrimaryButton>
         </View>
