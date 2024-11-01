@@ -12,8 +12,15 @@ function StartGameScreen() {
                 autoCapitalize='none'
                 autoCorrect={false} // prevents form auto correnion useful for email input
             />
-            <PrimaryButton>React</PrimaryButton>
-            <PrimaryButton>Confirm</PrimaryButton>
+            <View style={styles.buttonGroupContiner}>
+                <View style={styles.buttons}>
+                    <PrimaryButton>React</PrimaryButton>
+                </View>
+                
+                <View style={styles.buttons}>
+                    <PrimaryButton>Confirm</PrimaryButton>
+                </View>
+            </View>
         </View>
     );
 }
@@ -44,4 +51,13 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
     },
+    
+    buttonGroupContiner: {
+        flexDirection: 'row',
+    },
+
+    buttons: {
+        flex: 1,
+    },
+
 });
