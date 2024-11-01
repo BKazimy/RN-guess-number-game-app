@@ -1,7 +1,11 @@
-import { Text } from "react-native-web";
+import { Text, View } from "react-native-web";
 
 function GameScreen() {
-    return <Text>Game Screen!</Text>
+    return (
+        <View>
+            <Text>Game Screen!</Text>
+        </View>
+    );
 }
 
 export default GameScreen;

@@ -16,8 +16,8 @@ export default function App() {
   let screen = <StartGameScreen onConfermNumber={pickNumberHundler} />;
 
   if (userNumber) {
-    console.log("its time!")
-    // screen = <GameScreen />
+    screen = <GameScreen />
+    console.log(screen);
   }
 
   return (
