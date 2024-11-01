@@ -3,7 +3,7 @@ import { TextInput, View, StyleSheet, Alert } from 'react-native';
 
 import PrimaryButton from '../components/PrimaryButton';
 
-function StartGameScreen({ onConfermNumbebr }) {
+function StartGameScreen({ onConfermNumber }) {
     const [enteredNumber, setEnteredNumber] = useState('')
 
     function numberInputHandler(enteredText) {
@@ -26,7 +26,7 @@ function StartGameScreen({ onConfermNumbebr }) {
         }
         else {
             console.log("Valid number!")
-            onConfermNumbebr(chosenNumber);
+            // onConfermNumber(chosenNumber);
         }
     }
 
