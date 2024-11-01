@@ -13,12 +13,12 @@ export default function App() {
     console.log(pickedNumber);
   }
 
-  let screen = <StartGameScreen onConfermNumber={pickNumberHundler} />;
+  // let screen = <StartGameScreen onConfermNumber={pickNumberHundler} />;
 
-  if (userNumber) {
-    screen = <GameScreen />;
-    console.log(screen);
-  }
+  // if (userNumber) {
+  //   screen = <GameScreen />;
+  //   console.log(screen);
+  // }
 
   return (
      // styling here will apply throughout the whole app
@@ -32,7 +32,7 @@ export default function App() {
         style={styles.rootScreen}
         imageStyle={styles.backgroundImage}
       >
-        {screen}
+        { userNumber ? <GameScreen /> : <StartGameScreen onConfermNumber={pickNumberHundler} />}
       </ImageBackground>
     </LinearGradient>
   );

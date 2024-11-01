@@ -4,7 +4,7 @@ import { TextInput, View, StyleSheet, Alert } from 'react-native';
 import PrimaryButton from '../components/PrimaryButton';
 
 function StartGameScreen({ onConfermNumber }) {
-    const [enteredNumber, setEnteredNumber] = useState('')
+    const [enteredNumber, setEnteredNumber] = useState('11')
 
     function numberInputHandler(enteredText) {
         setEnteredNumber(enteredText);
@@ -12,7 +12,7 @@ function StartGameScreen({ onConfermNumber }) {
     }
 
     function resetInputHandler(){
-        setEnteredNumber('');
+        setEnteredNumber('11');
     }
 
     function confermInputHandler() {
