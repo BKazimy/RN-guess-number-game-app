@@ -8,7 +8,7 @@ export default function App() {
      // styling here will apply throughout the whole app
     <LinearGradient 
       style={styles.rootScreen}
-      colors={['#ddb52f', '#4e0329']}
+      colors={['#4e0329', '#ddb52f']}
     >
       <StartGameScreen />
     </LinearGradient>
