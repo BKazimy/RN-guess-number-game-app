@@ -23,6 +23,9 @@ function StartGameScreen() {
                 [{ text: 'Okay', style: 'destructive', onPress: resetInputHandler }]
             )
         }
+        else {
+            console.log("Valid number!")
+        }
     }
 
     return (
