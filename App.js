@@ -31,7 +31,7 @@ export default function App() {
         style={styles.rootScreen}
         imageStyle={styles.backgroundImage}
       >
-        {screen}
+        <View>{screen}</View>
       </ImageBackground>
     </LinearGradient>
   );
