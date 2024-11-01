@@ -10,7 +10,11 @@ export default function App() {
       style={styles.rootScreen}
       colors={['#4e0329', '#ddb52f']}
     >
-      <ImageBackground source={require('./assets/images/greenhouse.jpeg')}>
+      <ImageBackground 
+        source={require('./assets/images/greenhouse.jpeg')} 
+        resizeMethod='cover'
+        style={styles.rootScreen}
+      >
         <StartGameScreen />
       </ImageBackground>
     </LinearGradient>
