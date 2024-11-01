@@ -17,12 +17,7 @@ export default function App() {
 
   if (userNumber) {
     screen = <GameScreen />;
-    if (!React.isValidElement(screen)) {
-      console.log("not a validate return!");
-    }
-    else {
-      console.log("A valid return.");
-    }
+    console.log(typeof screen);
   }
 
   return (
