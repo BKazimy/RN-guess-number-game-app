@@ -1,4 +1,4 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { LinrearGradient } from 'expo-linear-gradient';
 
 import StartGameScreen from './screens/StartGameScreen';
