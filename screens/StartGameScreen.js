@@ -38,7 +38,7 @@ function StartGameScreen() {
             />
             <View style={styles.buttonGroupContiner}>
                 <View style={styles.buttons}>
-                    <PrimaryButton onPress={confermInputHandler}>React</PrimaryButton>
+                    <PrimaryButton onPress={resetInputHandler}>React</PrimaryButton>
                 </View>
 
                 <View style={styles.buttons}>
