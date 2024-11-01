@@ -1,13 +1,14 @@
 import { StyleSheet, View } from 'react-native';
+import { LinrearGradient } from 'expo-linear-gradient';
 
 import StartGameScreen from './screens/StartGameScreen';
 
 export default function App() {
   return (
      // styling here will apply throughout the whole app
-    <View style={styles.rootScreen}>
+    <LinrearGradient style={styles.rootScreen}>
       <StartGameScreen />
-    </View>
+    </LinrearGradient>
   );
 }
 
