@@ -6,7 +6,10 @@ import StartGameScreen from './screens/StartGameScreen';
 export default function App() {
   return (
      // styling here will apply throughout the whole app
-    <LinrearGradient style={styles.rootScreen}>
+    <LinrearGradient 
+      style={styles.rootScreen}
+      colors={[]}
+    >
       <StartGameScreen />
     </LinrearGradient>
   );
@@ -15,6 +18,5 @@ export default function App() {
 const styles = StyleSheet.create({
   rootScreen: {
     flex: 1,
-    backgroundColor: '#ddb52f',
   }
 });
