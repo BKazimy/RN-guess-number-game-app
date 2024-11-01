@@ -26,7 +26,7 @@ function StartGameScreen({ onConfermNumber }) {
         }
         else {
             console.log("Valid number!")
-            // onConfermNumber(chosenNumber);
+            onConfermNumber(chosenNumber);
         }
     }
 
