@@ -26,7 +26,8 @@ function StartGameScreen({ onConfermNumber }) {
         }
         else {
             console.log("Valid number!")
-            onConfermNumber(chosenNumber);
+            // onConfermNumber(chosenNumber);
+            console.log(chosenNumber);
         }
     }
 
@@ -43,11 +44,11 @@ function StartGameScreen({ onConfermNumber }) {
             />
             <View style={styles.buttonGroupContiner}>
                 <View style={styles.buttons}>
-                    <PrimaryButton onPress={resetInputHandler}>React</PrimaryButton>
-                </View>
-
-                <View style={styles.buttons}>
                     <PrimaryButton onPress={confermInputHandler}>Confirm</PrimaryButton>
+                </View>
+                
+                <View style={styles.buttons}>
+                    <PrimaryButton onPress={resetInputHandler}>React</PrimaryButton>
                 </View>
             </View>
         </View>
