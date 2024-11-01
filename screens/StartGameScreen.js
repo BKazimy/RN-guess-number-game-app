@@ -7,7 +7,7 @@ function StartGameScreen() {
     const [enteredNumber, setEnteredNumber] = useState('')
 
     function numberInputHandler(enteredText) {
-        // setEnteredNumber(enteredText);
+        setEnteredNumber(enteredText);
         console.log(enteredText);
     }
 
@@ -37,7 +37,7 @@ function StartGameScreen() {
                 keyboardType='number-pad'
                 autoCapitalize='none'
                 autoCorrect={false} // prevents form auto correnion useful for email input
-                onChange={numberInputHandler}
+                onChangeText={numberInputHandler}
                 value={enteredNumber}
             />
             <View style={styles.buttonGroupContiner}>
