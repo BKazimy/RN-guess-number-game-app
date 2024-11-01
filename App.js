@@ -16,7 +16,13 @@ export default function App() {
   let screen = <StartGameScreen onConfermNumber={pickNumberHundler} />;
 
   if (userNumber) {
-    screen = <GameScreen />
+    screen = <GameScreen />;
+    if (!React.isValidElement(screen)) {
+      console.log("not a validate return!");
+    }
+    else {
+      console.log("A valid return.");
+    }
   }
 
   return (
