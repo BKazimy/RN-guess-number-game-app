@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, ImageBackground } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 import StartGameScreen from './screens/StartGameScreen';
@@ -10,7 +10,9 @@ export default function App() {
       style={styles.rootScreen}
       colors={['#4e0329', '#ddb52f']}
     >
-      <StartGameScreen />
+      <ImageBackground source={require('./assets/images/greenhouse.jpeg')}>
+        <StartGameScreen />
+      </ImageBackground>
     </LinearGradient>
   );
 }
