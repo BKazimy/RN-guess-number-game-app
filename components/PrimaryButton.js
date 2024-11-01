@@ -1,11 +1,14 @@
-import { View, Text, Pressable } from "react-native";
+import { View, Text, Pressable, StyleSheet } from "react-native";
 
 function PrimaryButton({ children }) {
     function pressHandler() {
         console.log("pressed");
     }
     return (
-        <Pressable onPress={pressHandler}>
+        <Pressable 
+        style={styles.container}
+            onPress={pressHandler}
+        >
             <View>
                 <Text>{children}</Text>
             </View>
@@ -14,3 +17,14 @@ function PrimaryButton({ children }) {
 }
 
 export default PrimaryButton;
+
+
+const styles = StyleSheet.create({
+    container: {
+        backgroundColor: '#72063c',
+        borderRadius: 28,
+        paddingVertical: 8,
+        paddingHorizontal: 16,
+        elevation: 2,
+    }
+})
