@@ -8,6 +8,7 @@ function StartGameScreen() {
 
     function numberInputHandler(enteredText) {
         setEnteredNumber(enteredText);
+        console.log(enteredNumber);
     }
 
     function resetInputHandler(){
