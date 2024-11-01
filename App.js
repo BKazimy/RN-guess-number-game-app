@@ -1,11 +1,15 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import StartGameScreen from './screens/StartGameScreen';
 
 export default function App() {
-  return <StartGameScreen />
+  return <View style={styles.rootScreenq}>
+    <StartGameScreen />
+  </View>
 }
 
 const styles = StyleSheet.create({
-  
+  rootScreen: {
+    backgroundColor: '#ddb52f',
+  }
 });
