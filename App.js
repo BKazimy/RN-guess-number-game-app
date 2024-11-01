@@ -11,7 +11,7 @@ export default function App() {
       colors={['#4e0329', '#ddb52f']}
     >
       <ImageBackground 
-        source={require('./assets/images/greenhouse.jpeg')} 
+        source={require('./assets/images/bg.jpg')} 
         resizeMethod='cover'
         style={styles.rootScreen}
       >
