@@ -5,6 +5,15 @@ import PrimaryButton from '../components/PrimaryButton';
 
 function StartGameScreen() {
     const [enteredNumber, setEnteredNumber] = useState('')
+
+    function numberInputHandler(enteredText) {
+        setEnteredNumber(enteredText);
+    }
+
+    function confermInputHandler() {
+        
+    }
+
     return (
         <View style={styles.inputContainer}>
             <TextInput 
@@ -13,6 +22,8 @@ function StartGameScreen() {
                 keyboardType='number-pad'
                 autoCapitalize='none'
                 autoCorrect={false} // prevents form auto correnion useful for email input
+                onChange={numberInputHandler}
+                value={enteredNumber}
             />
             <View style={styles.buttonGroupContiner}>
                 <View style={styles.buttons}>
