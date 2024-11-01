@@ -3,9 +3,11 @@ import { StyleSheet, View } from 'react-native';
 import StartGameScreen from './screens/StartGameScreen';
 
 export default function App() {
-  return <View style={styles.rootScreenq}>
-    <StartGameScreen />
-  </View>
+  return (
+    <View style={styles.rootScreenq}>
+      <StartGameScreen />
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
