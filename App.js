@@ -10,12 +10,14 @@ export default function App() {
 
   function pickNumberHundler(pickedNumber) {
     setUserNumber(pickedNumber);
+    console.log(pickedNumber);
   }
 
   let screen = <StartGameScreen onConfermNumber={pickNumberHundler} />;
 
   if (userNumber) {
-    screen = <GameScreen />
+    console.log("its time!")
+    // screen = <GameScreen />
   }
 
   return (
