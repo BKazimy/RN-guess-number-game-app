@@ -7,7 +7,7 @@ function StartGameScreen() {
     const [enteredNumber, setEnteredNumber] = useState('')
 
     function numberInputHandler(enteredText) {
-        setEnteredNumber(enteredText);
+        // setEnteredNumber(enteredText);
         console.log(enteredText);
     }
 
